@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0AB3A1361C59F64200C8CDB2 /* StyleKitGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AB3A1351C59F64200C8CDB2 /* StyleKitGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AB3A13B1C59F96E00C8CDB2 /* StyleKitSwiftExtractor in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C5C311B27378E00E9D549 /* StyleKitSwiftExtractor */; };
 		6E5C5C351B27378E00E9D549 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C5C341B27378E00E9D549 /* main.swift */; };
 		6E5C5C3C1B2737D000E9D549 /* StyleKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C5C3B1B2737D000E9D549 /* StyleKitView.swift */; };
 		6E5C5C3F1B2744B400E9D549 /* StyleKitCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C5C3E1B2744B400E9D549 /* StyleKitCanvas.swift */; };
 		6E5C5C411B27460F00E9D549 /* AppendLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C5C401B27460F00E9D549 /* AppendLine.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AB3A13C1C59F97500C8CDB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5C5C291B27378E00E9D549 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5C5C301B27378E00E9D549;
+			remoteInfo = StyleKitSwiftExtractor;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6E5C5C2F1B27378E00E9D549 /* CopyFiles */ = {
@@ -131,6 +142,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0AB3A13D1C59F97500C8CDB2 /* PBXTargetDependency */,
 			);
 			name = StyleKitGenerator;
 			productName = StyleKitGenerator;
@@ -196,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB3A13B1C59F96E00C8CDB2 /* StyleKitSwiftExtractor in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +234,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AB3A13D1C59F97500C8CDB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5C5C301B27378E00E9D549 /* StyleKitSwiftExtractor */;
+			targetProxy = 0AB3A13C1C59F97500C8CDB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0AB3A1391C59F64200C8CDB2 /* Debug */ = {
