@@ -7,23 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AB3A1261C59F44E00C8CDB2 /* StyleKitViewGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AB3A1251C59F44E00C8CDB2 /* StyleKitViewGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AB3A12D1C59F46800C8CDB2 /* StyleKitSwiftExtractor in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C5C311B27378E00E9D549 /* StyleKitSwiftExtractor */; };
+		0AB3A1361C59F64200C8CDB2 /* StyleKitGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AB3A1351C59F64200C8CDB2 /* StyleKitGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E5C5C351B27378E00E9D549 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C5C341B27378E00E9D549 /* main.swift */; };
 		6E5C5C3C1B2737D000E9D549 /* StyleKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C5C3B1B2737D000E9D549 /* StyleKitView.swift */; };
 		6E5C5C3F1B2744B400E9D549 /* StyleKitCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C5C3E1B2744B400E9D549 /* StyleKitCanvas.swift */; };
 		6E5C5C411B27460F00E9D549 /* AppendLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C5C401B27460F00E9D549 /* AppendLine.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0AB3A12B1C59F45800C8CDB2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E5C5C291B27378E00E9D549 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E5C5C301B27378E00E9D549;
-			remoteInfo = StyleKitSwiftExtractor;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6E5C5C2F1B27378E00E9D549 /* CopyFiles */ = {
@@ -38,9 +27,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0AB3A1231C59F44E00C8CDB2 /* StyleKitViewGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StyleKitViewGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB3A1251C59F44E00C8CDB2 /* StyleKitViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleKitViewGenerator.h; sourceTree = "<group>"; };
 		0AB3A1271C59F44E00C8CDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AB3A1331C59F64200C8CDB2 /* StyleKitGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StyleKitGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB3A1351C59F64200C8CDB2 /* StyleKitGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleKitGenerator.h; sourceTree = "<group>"; };
+		0AB3A1371C59F64200C8CDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E5C5C311B27378E00E9D549 /* StyleKitSwiftExtractor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StyleKitSwiftExtractor; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5C5C341B27378E00E9D549 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6E5C5C3B1B2737D000E9D549 /* StyleKitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKitView.swift; sourceTree = "<group>"; };
@@ -49,7 +40,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0AB3A11F1C59F44E00C8CDB2 /* Frameworks */ = {
+		0AB3A12F1C59F64200C8CDB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,11 +66,21 @@
 			path = StyleKitViewGenerator;
 			sourceTree = "<group>";
 		};
+		0AB3A1341C59F64200C8CDB2 /* StyleKitGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				0AB3A1351C59F64200C8CDB2 /* StyleKitGenerator.h */,
+				0AB3A1371C59F64200C8CDB2 /* Info.plist */,
+			);
+			path = StyleKitGenerator;
+			sourceTree = "<group>";
+		};
 		6E5C5C281B27378E00E9D549 = {
 			isa = PBXGroup;
 			children = (
 				6E5C5C331B27378E00E9D549 /* StyleKitSwiftExtractor */,
 				0AB3A1241C59F44E00C8CDB2 /* StyleKitViewGenerator */,
+				0AB3A1341C59F64200C8CDB2 /* StyleKitGenerator */,
 				6E5C5C321B27378E00E9D549 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				6E5C5C311B27378E00E9D549 /* StyleKitSwiftExtractor */,
-				0AB3A1231C59F44E00C8CDB2 /* StyleKitViewGenerator.framework */,
+				0AB3A1331C59F64200C8CDB2 /* StyleKitGenerator.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,34 +108,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0AB3A1201C59F44E00C8CDB2 /* Headers */ = {
+		0AB3A1301C59F64200C8CDB2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB3A1261C59F44E00C8CDB2 /* StyleKitViewGenerator.h in Headers */,
+				0AB3A1361C59F64200C8CDB2 /* StyleKitGenerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0AB3A1221C59F44E00C8CDB2 /* StyleKitViewGenerator */ = {
+		0AB3A1321C59F64200C8CDB2 /* StyleKitGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AB3A12A1C59F44E00C8CDB2 /* Build configuration list for PBXNativeTarget "StyleKitViewGenerator" */;
+			buildConfigurationList = 0AB3A1381C59F64200C8CDB2 /* Build configuration list for PBXNativeTarget "StyleKitGenerator" */;
 			buildPhases = (
-				0AB3A11E1C59F44E00C8CDB2 /* Sources */,
-				0AB3A11F1C59F44E00C8CDB2 /* Frameworks */,
-				0AB3A1201C59F44E00C8CDB2 /* Headers */,
-				0AB3A1211C59F44E00C8CDB2 /* Resources */,
+				0AB3A12E1C59F64200C8CDB2 /* Sources */,
+				0AB3A12F1C59F64200C8CDB2 /* Frameworks */,
+				0AB3A1301C59F64200C8CDB2 /* Headers */,
+				0AB3A1311C59F64200C8CDB2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0AB3A12C1C59F45800C8CDB2 /* PBXTargetDependency */,
 			);
-			name = StyleKitViewGenerator;
-			productName = StyleKitViewGenerator;
-			productReference = 0AB3A1231C59F44E00C8CDB2 /* StyleKitViewGenerator.framework */;
+			name = StyleKitGenerator;
+			productName = StyleKitGenerator;
+			productReference = 0AB3A1331C59F64200C8CDB2 /* StyleKitGenerator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6E5C5C301B27378E00E9D549 /* StyleKitSwiftExtractor */ = {
@@ -165,7 +165,7 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ColemanCDA;
 				TargetAttributes = {
-					0AB3A1221C59F44E00C8CDB2 = {
+					0AB3A1321C59F64200C8CDB2 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 					6E5C5C301B27378E00E9D549 = {
@@ -186,24 +186,23 @@
 			projectRoot = "";
 			targets = (
 				6E5C5C301B27378E00E9D549 /* StyleKitSwiftExtractor */,
-				0AB3A1221C59F44E00C8CDB2 /* StyleKitViewGenerator */,
+				0AB3A1321C59F64200C8CDB2 /* StyleKitGenerator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0AB3A1211C59F44E00C8CDB2 /* Resources */ = {
+		0AB3A1311C59F64200C8CDB2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB3A12D1C59F46800C8CDB2 /* StyleKitSwiftExtractor in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AB3A11E1C59F44E00C8CDB2 /* Sources */ = {
+		0AB3A12E1C59F64200C8CDB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,56 +222,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		0AB3A12C1C59F45800C8CDB2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E5C5C301B27378E00E9D549 /* StyleKitSwiftExtractor */;
-			targetProxy = 0AB3A12B1C59F45800C8CDB2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		0AB3A1281C59F44E00C8CDB2 /* Debug */ = {
+		0AB3A1391C59F64200C8CDB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = StyleKitViewGenerator/Info.plist;
+				INFOPLIST_FILE = StyleKitGenerator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.armifer.StyleKitViewGenerator;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.armifer.StyleKitGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		0AB3A1291C59F44E00C8CDB2 /* Release */ = {
+		0AB3A13A1C59F64200C8CDB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = StyleKitViewGenerator/Info.plist;
+				INFOPLIST_FILE = StyleKitGenerator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.armifer.StyleKitViewGenerator;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.armifer.StyleKitGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -374,11 +366,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AB3A12A1C59F44E00C8CDB2 /* Build configuration list for PBXNativeTarget "StyleKitViewGenerator" */ = {
+		0AB3A1381C59F64200C8CDB2 /* Build configuration list for PBXNativeTarget "StyleKitGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AB3A1281C59F44E00C8CDB2 /* Debug */,
-				0AB3A1291C59F44E00C8CDB2 /* Release */,
+				0AB3A1391C59F64200C8CDB2 /* Debug */,
+				0AB3A13A1C59F64200C8CDB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
